@@ -1,0 +1,13 @@
+<mat-toolbar color="main">
+    <mat-toolbar-row>
+      <span><img class="shortlogo" src="./assets/ARM_Logo.png"></span>
+      <span class="example-fill-remaining-space"></span>
+      <span class="example-spacer"></span>
+  
+      <button mat-button [routerLink]="['/home']">Home</button>
+      <button mat-button [routerLink]="['/home/test']">Test</button>
+      <button mat-button [routerLink]="['/home/loandetails']">Loan Details</button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  
+  <router-outlet></router-outlet>

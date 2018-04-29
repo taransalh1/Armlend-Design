@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\services",
+    "\\src\\app\\services\\summary",
+    "\\src\\app\\services\\summary\\exceptions",
+    "\\src\\app\\services\\summary\\exceptions\\calculations",
+    "\\src\\app\\services\\summary\\exceptions\\calculations\\agpromaxadditionscalculation"
+  ],
+  "SelectedNode": "\\src\\app\\services\\summary\\exceptions\\calculations\\agpromaxadditionscalculation\\agpromaxadditionscalculation.service.ts",
+  "PreviewInSolutionExplorer": false
+}

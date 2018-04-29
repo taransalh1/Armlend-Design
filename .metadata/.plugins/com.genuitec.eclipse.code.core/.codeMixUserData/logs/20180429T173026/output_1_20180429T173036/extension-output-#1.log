@@ -1,0 +1,13 @@
+Looking for git in: C:\Program Files\Git\cmd\git.exe
+Using git 2.17.0.windows.1 from C:\Program Files\Git\cmd\git.exe
+git rev-parse --show-toplevel
+git config --get commit.template
+git status -z -u
+git symbolic-ref --short HEAD
+git rev-parse master
+fatal: ambiguous argument 'master': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+git remote --verbose

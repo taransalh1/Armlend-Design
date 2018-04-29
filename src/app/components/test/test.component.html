@@ -1,0 +1,12 @@
+<div class="col-sm-12">
+  <mat-form-field>
+    <mat-select placeholder="Select Loan Model" (change)="onChange($event)"  name="loan">
+      <mat-option *ngFor="let loan of Loans" [value]="loan.name">
+        {{loan.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="col-sm-12">
+  <ngx-json-viewer [json]="LoanObject"></ngx-json-viewer>
+</div>

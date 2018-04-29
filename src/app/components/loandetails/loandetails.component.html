@@ -1,0 +1,33 @@
+<form class="example-form">
+  <span>Balance Sheet item Section</span>
+  <mat-form-field>
+    <input matInput name="loanctrl" placeholder="Enter Loan ID" [(ngModel)]="loanID">
+  </mat-form-field>
+  <button (click)="getBalanceSheetItemsforLoan()" mat-raised-button color="warn">Process</button>
+
+  <div class="col-sm-4">
+  <mat-table [dataSource]="dataSource">
+
+ <!-- Position Column -->
+    <ng-container matColumnDef="assets">
+      <mat-header-cell *matHeaderCellDef> Assets </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.assets}} </mat-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="discount">
+      <mat-header-cell *matHeaderCellDef> Discounts </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.discount}} </mat-cell>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="liability">
+      <mat-header-cell *matHeaderCellDef> Liability </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.liability}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+  </div>
+</form>

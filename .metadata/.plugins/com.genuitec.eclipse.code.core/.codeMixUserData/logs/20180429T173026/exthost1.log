@@ -1,0 +1,23 @@
+[2018-04-29 17:30:40.429] [exthost1] [info] extension host started
+[2018-04-29 17:30:40.700] [exthost1] [info] extension host started
+[2018-04-29 17:30:40.825] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-04-29 17:30:40.826] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\tarje\.codemix\engine\resources\app\extensions\emmet\out\extension
+[2018-04-29 17:30:41.083] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-04-29 17:30:41.083] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\tarje\.codemix\engine\resources\app\extensions\git\out\main
+[2018-04-29 17:30:41.380] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-04-29 17:30:41.380] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\tarje\.codemix\engine\resources\app\extensions\merge-conflict\out\extension
+[2018-04-29 17:30:41.429] [exthost1] [info] ExtensionService#_doActivateExtension HookyQR.beautify {"startup":true,"activationEvent":"*"}
+[2018-04-29 17:30:41.429] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\tarje\.vscode\extensions\HookyQR.beautify-1.3.0\extension
+[2018-04-29 17:30:41.661] [exthost1] [info] ExtensionService#_doActivateExtension Zignd.html-css-class-completion {"startup":true,"activationEvent":"*"}
+[2018-04-29 17:30:41.661] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\tarje\.vscode\extensions\Zignd.html-css-class-completion-1.17.1\out\src\extension
+[2018-04-29 17:30:43.497] [exthost1] [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense {"startup":true,"activationEvent":"*"}
+[2018-04-29 17:30:43.497] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\tarje\.vscode\extensions\christian-kohler.path-intellisense-1.4.2\out\src\extension
+[2018-04-29 17:30:43.530] [exthost1] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"activationEvent":"*"}
+[2018-04-29 17:30:43.530] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\tarje\.vscode\extensions\dbaeumer.vscode-eslint-1.4.8\client\out\extension
+[2018-04-29 17:30:43.658] [exthost1] [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag {"startup":true,"activationEvent":"*"}
+[2018-04-29 17:30:43.658] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\tarje\.vscode\extensions\formulahendry.auto-close-tag-0.5.6\out\src\extension
+[2018-04-29 17:30:43.668] [exthost1] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-04-29 17:30:43.668] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\tarje\.codemix\engine\resources\app\extensions\configuration-editing\out\extension
+[2018-04-29 17:30:43.691] [exthost1] [info] ExtensionService#_doActivateExtension vscode.json {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-04-29 17:30:43.691] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\tarje\.codemix\engine\resources\app\extensions\json\client\out\jsonMain
+[2018-04-29 17:30:45.286] [exthost1] [info] eager extensions activated
