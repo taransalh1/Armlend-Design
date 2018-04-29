@@ -6,7 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
 import { LoginComponent } from './components/login/login.component';
-import { MatCardModule, MatCheckboxModule, MatButtonModule, MatProgressSpinnerModule, MatFormFieldModule, MatToolbarModule, MatInputModule, MatSelectModule, MatTableModule } from '@angular/material';
+import { MatCardModule, MatCheckboxModule, MatButtonModule, MatProgressSpinnerModule, MatFormFieldModule, MatToolbarModule, MatInputModule, MatSelectModule, MatTableModule, MatSidenavModule, MatNavList, MatListModule, MatIconModule } from '@angular/material';
 import {ToastModule, ToastOptions} from 'ng2-toastr/ng2-toastr';
 import { CustomOption } from './constants/toasteroptions';
 import { HomeComponent } from './components/home/home.component';
@@ -15,17 +15,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxJsonViewerModule } from 'ngx-json-viewer';
 import { BalanceSheetApiService } from './webservice/balancesheetapi/balancesheetapi.service';
 import { LoanDetailsComponent } from './components/loandetails/loandetails.component';
+import { SummaryComponent } from './components/loandetails/summary/summary.component';
 import { HttpModule } from '@angular/http';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
     TestComponent,
-    LoanDetailsComponent
+    LoanDetailsComponent,
+    SummaryComponent
   ],
   imports: [
-    BrowserModule,
+  BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MatCardModule,
@@ -38,6 +41,9 @@ import { HttpModule } from '@angular/http';
     MatToolbarModule,
     MatInputModule,
     MatSelectModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule,
     HttpClientModule,
     HttpModule,
     NgxJsonViewerModule,

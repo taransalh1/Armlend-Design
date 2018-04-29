@@ -1,6 +1,10 @@
-Apr 29, 2018 5:30:36 PM com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
-INFO: Package starting up at Sun Apr 29 17:30:36 IST 2018
-Apr 29, 2018 5:31:09 PM org.glassfish.grizzly.http.server.NetworkListener shutdownNow
-INFO: Stopped listener bound to [0.0.0.0:55611]
-Apr 29, 2018 5:31:09 PM org.glassfish.tyrus.server.Server stop
+Apr 29, 2018 10:21:15 PM com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
+INFO: Package starting up at Sun Apr 29 22:21:15 IST 2018
+Apr 29, 2018 10:21:18 PM com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
+INFO: Latest version of package has already been enabled in the workspace; check finished in 4ms
+Apr 29, 2018 10:21:21 PM com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForUpdates
+INFO: Latest version of package is installed; update check finished in 3311ms
+Apr 29, 2018 10:21:50 PM org.glassfish.grizzly.http.server.NetworkListener shutdownNow
+INFO: Stopped listener bound to [0.0.0.0:56544]
+Apr 29, 2018 10:21:50 PM org.glassfish.tyrus.server.Server stop
 INFO: Websocket Server stopped.

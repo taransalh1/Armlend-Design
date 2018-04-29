@@ -4,6 +4,7 @@ import { LoginComponent } from "./components/login/login.component";
 import { HomeComponent } from "./components/home/home.component";
 import { TestComponent } from "./components/test/test.component";
 import { LoanDetailsComponent } from './components/loandetails/loandetails.component';
+import { SummaryComponent } from "./components/loandetails/summary/summary.component";
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -13,15 +14,20 @@ const routes: Routes = [
       path:'test',component:TestComponent
     },
     {
-      path:'loandetails',component:LoanDetailsComponent
+      path:'loandetails',component:LoanDetailsComponent,children:[
+        {
+          path:'',component:SummaryComponent
+        },
+         {
+          path:'summary',component:SummaryComponent
+        },
+      ]
     }
   ]}
 ];
 
 @NgModule({
   imports: [
-  
-
   RouterModule.forRoot(routes)
   ],
   exports: [

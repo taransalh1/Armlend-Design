@@ -8,22 +8,14 @@ import { MatTableDataSource } from '@angular/material';
   styleUrls: ['./loandetails.component.css']
 })
 export class LoanDetailsComponent implements OnInit {
-  loanID:number;
-  items:Array<any>;
-  dataSource =new MatTableDataSource(this.items);
-  displayedColumns = ['assets', 'discount', 'liability'];
-  constructor(private balancesheetservice: BalanceSheetApiService) { }
+  navitems=['Overview','Summary'];
+  
+  constructor() { }
 
   ngOnInit() {
 
   }
 
-  getBalanceSheetItemsforLoan(){
-    this.balancesheetservice.getRecordsByloanId(this.loanID).subscribe(res=>{
-      debugger
-    this.items=res.data;
-    this.dataSource.data=this.items;
-    });
-  }
+  
 
 }
