@@ -6,30 +6,27 @@
   <button (click)="getBalanceSheetItemsforLoan()" mat-raised-button color="warn">Process</button>
 
   <div class="col-sm-4">
-  <mat-table [dataSource]="dataSource">
-
- <!-- Position Column -->
-    <ng-container matColumnDef="assets">
-      <mat-header-cell *matHeaderCellDef> Assets </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.assets}} </mat-cell>
-    </ng-container>
-
-    <!-- Name Column -->
-    <ng-container matColumnDef="discount">
-      <mat-header-cell *matHeaderCellDef> Discounts </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.discount}} </mat-cell>
-    </ng-container>
-
-    <!-- Weight Column -->
-    <ng-container matColumnDef="liability">
-      <mat-header-cell *matHeaderCellDef> Liability </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.liability}} </mat-cell>
-    </ng-container>
-
-    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-  </mat-table>
+   <table>
+     <tr>
+       <th *ngFor="let header of displayedColumns">{{header.key}}</th>
+     </tr>
+     <tr *ngFor="let row of items.data;let i=index">
+        <td *ngFor="let row_pi of row;let p_i=index">
+          <div (click)="row_pi.canedit?row_pi.editmode=true:''" *ngIf="!row_pi.editmode">
+          <span>{{row_pi.value}}</span>
+          </div>
+          <div  *ngIf="row_pi.editmode">
+              <input type="number" name="edit{{i+p_i}}" type="text" [(ngModel)]="row_pi.value">
+              <button (click)="row_pi.editmode=false" mat-icon-button>
+                  <mat-icon>edit</mat-icon>
+              </button>
+          </div>
+        </td>
+    </tr>
+     
+   </table>
   </div>
+  
 </form>
 
 

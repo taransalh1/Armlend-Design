@@ -17,6 +17,9 @@ import { Observable } from 'rxjs/Observable';
 export class TestComponent implements OnInit {
   public Loans: Array<Loan_selectcontrol> = new Array<Loan_selectcontrol>();
   public LoanObject: string = "";
+   jsonFiles=[
+    'bartels.json','chappel.json','jamie.json','kee.json','peter.json'
+  ];
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
@@ -25,7 +28,7 @@ export class TestComponent implements OnInit {
 
   loadModelsAvailable() {
     debugger
-    jsonFiles.forEach((item, index) => {
+    this.jsonFiles.forEach((item, index) => {
       let newitem: Loan_selectcontrol = new Loan_selectcontrol();
       newitem.id = index + 1;
       newitem.name = item;
