@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewContainerRef } from '@angular/core';
 import { BalanceSheetApiService } from '../../../webservice/balancesheetapi/balancesheetapi.service';
-import { MatTableDataSource } from '@angular/material';
 import { EditableModel, EditableAttribute } from '../../../models/test.models';
 import { element } from 'protractor';
 import { keyvalueattriute } from './../../../models/test.models';
@@ -97,7 +96,4 @@ export class SummaryComponent implements OnInit {
   calculateAdjustednetworth(adjvalue:number,liability:number):number{
     return adjvalue-liability; 
   }
-
-
-
 }
