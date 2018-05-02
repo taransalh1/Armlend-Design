@@ -39,10 +39,29 @@
 
 
 
-  <div class="login">
-    <input type="text" [(ngModel)]="username"  placeholder="Username" id="username">  
-  <input type="password"  [(ngModel)]="password"  placeholder="password" id="password">  
-  <a href="#" class="forgot">forgot password?</a>
-  <input type="submit" (click)="login()" value="Sign In">
+<div class="login">
+  <div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-4">
+      <div class="ui-inputgroup">
+        <span class="ui-inputgroup-addon">
+          <i class="fa fa-user"></i>
+        </span>
+        <input [(ngModel)]="username" type="text" pInputText placeholder="Username">
+      </div>
+    </div>
+
+    <div class="ui-g-12 ui-md-4">
+      <div class="ui-inputgroup">
+        <!-- <span class="ui-inputgroup-addon">$</span> -->
+        <input [(ngModel)]="password" type="password" pInputText placeholder="Password">
+        <!-- <span class="ui-inputgroup-addon">.00</span> -->
+      </div>
+    </div>
+
+    <div class="ui-g-12 ui-md-4">
+      <button pButton (click)="login()" type="button" label="Login"></button>
+      <!-- <p-button label="Click"></p-button> -->
+    </div>
+  </div>
 </div>
 <div class="shadow"></div>

@@ -16,6 +16,7 @@ import { BalanceSheetApiService } from './webservice/balancesheetapi/balanceshee
 import { LoanDetailsComponent } from './components/loandetails/loandetails.component';
 import { SummaryComponent } from './components/loandetails/summary/summary.component';
 import { HttpModule } from '@angular/http';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { HttpModule } from '@angular/http';
     HttpModule,
     NgxJsonViewerModule,
     ReactiveFormsModule,
-    ToastModule.forRoot()
+    ToastModule.forRoot(),
+    ButtonModule 
   ],
   providers: [{ provide: ToastOptions, useClass: CustomOption }, BalanceSheetApiService],
   bootstrap: [AppComponent]
