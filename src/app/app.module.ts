@@ -17,6 +17,8 @@ import { LoanDetailsComponent } from './components/loandetails/loandetails.compo
 import { SummaryComponent } from './components/loandetails/summary/summary.component';
 import { HttpModule } from '@angular/http';
 import { ButtonModule } from 'primeng/button';
+import {MenubarModule} from 'primeng/menubar';
+import {MenuItem} from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { ButtonModule } from 'primeng/button';
     HttpModule,
     NgxJsonViewerModule,
     ReactiveFormsModule,
+    MenubarModule,
     ToastModule.forRoot(),
     ButtonModule 
   ],

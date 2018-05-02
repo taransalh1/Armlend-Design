@@ -20,7 +20,9 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "assets/styles/style.scss"
+        "assets/styles/style.scss",
+        "../node_modules/primeng/resources/themes/cruze/theme.css",
+        "../node_modules/primeng/resources/primeng.min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
